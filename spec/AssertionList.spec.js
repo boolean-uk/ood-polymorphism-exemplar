@@ -2,7 +2,7 @@ const AssertionList = require("../src/AssertionList.js")
 const Equal = require("../src/Equal.js")
 const Include = require("../src/Include.js")
 
-fdescribe("AssertionList", () => {
+describe("AssertionList", () => {
   describe("#check()", () => {
     it("returns true when assertions are true", () => {
       const equalAssertion = new Equal(1, 1)
