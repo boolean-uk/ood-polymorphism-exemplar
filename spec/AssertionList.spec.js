@@ -9,7 +9,7 @@ describe("AssertionList", () => {
       const includeAssertion = new Include([1,2,3], 3)
       const assertionList = new AssertionList([equalAssertion, includeAssertion])
 
-      expect(assertionList.checkAll()).toEqual(true)
+      expect(assertionList.check()).toEqual(true)
     })
 
     it("returns false when at least 1 assertion is false", () => {
@@ -17,7 +17,7 @@ describe("AssertionList", () => {
       const includeAssertion = new Include([1,2,3], 3)
       const assertionList = new AssertionList([equalAssertion, includeAssertion])
 
-      expect(assertionList.checkAll()).toEqual(false)
+      expect(assertionList.check()).toEqual(false)
     })
   })
 })
