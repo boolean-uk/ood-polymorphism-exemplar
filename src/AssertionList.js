@@ -3,7 +3,7 @@ class AssertionList {
     this.assertions = assertions
   }
 
-  checkAll() {
+  check() {
     return this.assertions.every(assertion => {
         return assertion.check()
     })
